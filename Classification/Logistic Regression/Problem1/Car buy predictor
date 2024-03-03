@@ -74,3 +74,7 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
+
+#Evaluating model performance using R-square
+from sklearn.metrics import r2_score
+r2_score(y_test,y_pred)
