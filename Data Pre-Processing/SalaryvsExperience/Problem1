@@ -28,7 +28,7 @@ print(X)
 #Encoding independent variable
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
-ct = ColumnTranformer(transformers = [('encoder', OneHotEncoder(), [0], remainder = 'passthrough')
+ct = ColumnTransformer(transformers = [('encoder', OneHotEncoder(), [0], remainder = 'passthrough')
 X = np.array(ct.fit_transform(X))
 print(X)
 
@@ -55,3 +55,7 @@ X_train[:, 3:] = sc.transform(X_test[:, 3:])
 
 print(X_train)
 print(X_test)
+
+
+
+
